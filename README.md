@@ -1,6 +1,6 @@
 # Doctor Lookup
 
-#### A webpage created for determining a users age based on a planet's solar years
+#### A webpage for finding doctors in the Portland metro area.
 
 #### By **Mike Lofgren**
 
@@ -12,24 +12,16 @@ A user can enter a medical issue to receive a list of doctors in the Portland ar
 ### Specs
 | Spec                                    | Input                            | Output                                    |
 | :---------------------------------------| :------------------------------- | :---------------------------------------- |
-| User inputs issue to receive a list of doctors.  | 1980                              | 35                                       |
-| The user gets a readout for mercury     | 1984                              |146 years old                             |
-| The user gets a readout for Venus       | 1984                              |56 years old                              |
-| The user gets a readout Mars            | 1984                              |19 years old                              |
-| The user clicks on Jupiter              | 1984                              | 3 years old                              |
-| The user smokes so they become older by 10 years|35, smokes                 |45                                        |
-| The user drinks so they become older by 5 years|35, drinks                  |40                                        |
-| The user exercises so they become younger by 10 years| 35, exercises        |25                                        |
-| The user gets a readout for life expectancy mercury| 1984                   |145.9999996194825 years                   |
-| The user gets a readout for life expectancy Venus| 1984                     |55.999999984155956 years                  |
-| The user gets a readout for life expectancy Mars| 1984                      |18.999999619482494 years                  |
-| The user gets a readout for life expectancy Jupiter| 1984                   |2.999999984155956 years                   |
+| User inputs issue to receive a list of doctors for a medical condition.  |Flu  |Providers names                        |
+| User inputs a name to receive a list of doctors names in the area.     | Williams |Mike Williams, Mary Williams...     |
+| User receives information on doctors if the results match| Dr. Brule |First name, last name, address, phone number, website and whether or not the doctor is accepting new patients|
+| If user inputs a search that does not match any search it returns a statement saying no doctors found        |Hulk Hogan                       | Sorry no doctors found.                           |
 
 ## Setup/Installation Requirements
 
 1. To run this program, clone repository from this GitHub.
 2. Open file in a web browser such as Google Chrome.
-3. Type in an input to find a doctor.
+3. Type in an input or illness to find a doctor.
 4. The bootstrap file should be under "css" folder of project and jQuery file should be under "js" directory.
 
 ## Known Bugs
