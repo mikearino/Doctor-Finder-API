@@ -15,7 +15,7 @@ $(document).ready(function() {
     promise.then(function(response) {
       let body = JSON.parse(response);
       console.log(body.insult);
-      console.log(body.data)
+      console.log(body.data.practices.name)
       $(".output").text(body.insult);
     }, function(error) {
       $(".output").text(`There was an error you dungul! ${error.message}`);
