@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function() {
 
-  $("#insultForm").submit(function(event) {
+  $("#docForm").submit(function(event) {
     event.preventDefault();
 
     let output = new GetInsult();
@@ -15,6 +15,7 @@ $(document).ready(function() {
     promise.then(function(response) {
       let body = JSON.parse(response);
       console.log(body.insult);
+      console.log(body.data)
       $(".output").text(body.insult);
     }, function(error) {
       $(".output").text(`There was an error you dungul! ${error.message}`);
