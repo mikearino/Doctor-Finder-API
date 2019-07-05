@@ -14,12 +14,14 @@ $(document).ready(function() {
 
     promise.then(function(response) {
       let body = JSON.parse(response);
-      console.log(body.insult);
-      console.log(body.data[0])
+      console.log(body.data[0].profile.last_name)//how to target last name
       for (let i=0; i <= body.data.length; i++) {
-        // let newArray = []
-        //      body.data[i].push(newArray);
-             console.log(body.data[i])
+        let newArray = []
+        if (body.data[i].profile.last_name.includes("R") || body.data[i].profile.first_name.includes("R")) {
+          newArray.push(body.data[i])
+          console.log(newArray)
+
+        }
     }
       $(".output").text(body.insult);
     }, function(error) {
