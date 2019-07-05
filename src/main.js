@@ -8,7 +8,8 @@ $(document).ready(function() {
 
   $("#docForm").submit(function(event) {
     event.preventDefault();
-
+    let docName = $('#name-input').val();
+    console.log(docName);
     let output = new GetInsult();
     let promise = output.makeInsult();
 
@@ -16,16 +17,16 @@ $(document).ready(function() {
       let body = JSON.parse(response);
       console.log(body.data[0].profile.last_name)//how to target last name
       for (let i=0; i <= body.data.length; i++) {
-        let newArray = []
-        if (body.data[i].profile.last_name.includes("R") || body.data[i].profile.first_name.includes("R")) {
-          newArray.push(body.data[i])
-          console.log(newArray)
+        let docArray = [];
+        if (body.data[i].profile.last_name.includes(docName) || body.data[i].profile.first_name.includes(docName)) {
+          docArray.push(body.data[i]);
+          console.log(docArray);
 
         }
     }
       $(".output").text(body.insult);
     }, function(error) {
-      $(".output").text(`There was an error you dungul! ${error.message}`);
+      $(".output").text(`There was an error! ${error.message}`);
     });
 
   });
