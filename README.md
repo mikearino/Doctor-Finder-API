@@ -21,6 +21,7 @@ A user can enter a medical issue to receive a list of doctors in the Portland ar
 
 1. To run this program, clone repository from this GitHub.
 2. Open file in a web browser such as Google Chrome.
+3. Enter in an API key from into 
 3. Type in an input or illness to find a doctor.
 4. The bootstrap file should be under "css" folder of project and jQuery file should be under "js" directory.
 
