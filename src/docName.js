@@ -1,7 +1,7 @@
 export class GetDoc {
 
   makeDoc() {
-    return new Promise(function(resolve, reject) {
+    return new Promise((resolve, reject) => {
       let request = new XMLHttpRequest();
       const url = process.env.API_KEY;
       request.onload = function() {

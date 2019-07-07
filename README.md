@@ -21,9 +21,10 @@ A user can enter a medical issue to receive a list of doctors in the Portland ar
 
 1. To run this program, clone repository from this GitHub.
 2. Open file in a web browser such as Google Chrome.
-3. Enter in an API key from better doctor into key
-3. Type in an input or illness to find a doctor.
-4. The bootstrap file should be under "css" folder of project and jQuery file should be under "js" directory.
+3. Create a .env folder in the top level of the directory. Copy and paste this in to .env file: API_KEY = https://api.betterdoctor.com/2016-03-01/doctors?location=45.5155%2C-122.413%2C100&user_location=45.5155%2C-122.413&skip=0&limit=100&user_key=
+4. paste in your API key following the previous line.
+5. Type in an input or illness to find a doctor.
+6. The bootstrap file should be under "css" folder of project and jQuery file should be under "js" directory.
 
 ## Known Bugs
 * No known bugs at this time.
@@ -40,6 +41,6 @@ If there are any questions, bugs or concerns, please contact mikeylofgren@gmail.
 
 ### License
 
-*{This software is licensed under the MIT license}*
+*This software is licensed under the MIT license*
 
 Copyright (c) 2019 **Mike Lofgren**
