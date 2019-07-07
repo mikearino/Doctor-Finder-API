@@ -13,7 +13,7 @@ A user can enter a medical issue to receive a list of doctors in the Portland ar
 | Spec                                    | Input                            | Output                                    |
 | :---------------------------------------| :------------------------------- | :---------------------------------------- |
 | User does not input anything, it returns all doctors unsorted | " "        | Full list                                 |
-| User inputs a name or illness not in the database| skateboard              | Your search did not return any results.   |
+| User inputs a name or illness not in the database| Skateboard              | Your search did not return any results.   |
 | User has invalid API call                 |Bad API key                     | There was an error.                       |
 | User inputs issue to receive a list of doctors for a medical condition.  |Flu  |Providers names                        |
 | User inputs a name to receive a list of doctors names in the area.     | Williams |Mike Williams, Mary Williams...     |
