@@ -17,9 +17,12 @@ $(document).ready(() => {
             Address: ${body.data[i].practices[0].visit_address.street} ${body.data[i].practices[0].visit_address.city}
             Phone Number: ${body.data[i].practices[0].phones[0].number} Accepting New Patients: ${body.data[i].practices[0].accepts_new_patients}` );
           }
+          else {
+            $(".output").text("Your search did not return any results.")
+          }
         }
       }, (error) => {
-        $(".output").text(`There was an error! ${error.message}`);
+        $(".output").text(`There was an error. ${error.message}`);
       });
     });
   });
