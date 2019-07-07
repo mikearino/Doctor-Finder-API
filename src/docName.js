@@ -1,6 +1,6 @@
-export class GetInsult {
+export class GetDoc {
 
-  makeInsult() {
+  makeDoc() {
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
       const url = process.env.API_KEY;
