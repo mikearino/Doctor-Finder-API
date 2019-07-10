@@ -12,7 +12,7 @@ A user can enter a medical issue to receive a list of doctors in the Portland ar
 ### Specs
 | Spec                                    | Input                            | Output                                    |
 | :---------------------------------------| :------------------------------- | :---------------------------------------- |
-| User does not input anything, it returns all doctors unsorted | " "        | Please enter a name or illness. list                                 |
+| User does not input anything, it returns all doctors unsorted | " "        | Please enter a name or illness.                                 |
 | User inputs a name or illness not in the database| Skateboard              | Your search did not return any results.   |
 | User has invalid API call                 |Bad API key                     | There was an error.                       |
 | User inputs issue to receive a list of doctors for a medical condition.  |Flu  |Providers names                        |
