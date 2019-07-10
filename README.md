@@ -12,7 +12,7 @@ A user can enter a medical issue to receive a list of doctors in the Portland ar
 ### Specs
 | Spec                                    | Input                            | Output                                    |
 | :---------------------------------------| :------------------------------- | :---------------------------------------- |
-| User does not input anything, it returns all doctors unsorted | " "        | Full list                                 |
+| User does not input anything, it returns all doctors unsorted | " "        | Please enter a name or illness. list                                 |
 | User inputs a name or illness not in the database| Skateboard              | Your search did not return any results.   |
 | User has invalid API call                 |Bad API key                     | There was an error.                       |
 | User inputs issue to receive a list of doctors for a medical condition.  |Flu  |Providers names                        |
@@ -24,7 +24,7 @@ A user can enter a medical issue to receive a list of doctors in the Portland ar
 
 1. To run this program, clone repository from this GitHub.
 2. Enter in the command $ NPM install from terminal in projects root directory.
-3. Create a .env folder in the top level of the directory. Copy and paste this in to .env file: API_KEY = https://api.betterdoctor.com/2016-03-01/doctors?location=45.5155%2C-122.413%2C100&user_location=45.5155%2C-122.413&skip=0&limit=100&user_key=
+3. Paste an api key from Better Doctor in to the docName.js variable named url.
 4. Paste in your API key following the previous line.
 5. Enter in the command $ NPM run start from terminal in projects root directory.
 6. Type in an input or illness to find a doctor.
